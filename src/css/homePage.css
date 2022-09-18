@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 550px;
+    min-height: 815px;
+}
+
+.cabecalho-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 7rem;
+}
+
+.logo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #415AF3;
+}
+
+.divImgCabecalho-topo {
+    background-color: #8c91bd;
+    border: 2px solid #415AF3;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.cabecalho-perfil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    height: 11rem;
+    background-color: #415AF3;
+}
+
+.divImgPerfil-perfil {
+    background-color: #8c91bd;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+}
+
+.nome-cabecalho {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.deslogar {
+    font-family: 'Inter';
+    background-color: rgba(240, 37, 37, 0.76);
+    color: white;
+    border: white;
+    border-radius: 0.5rem;
+
+    width: 100%;
+    margin-top: 70px;
+
+    height: 2rem;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    font-family: "Inter";
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.editarPerfil{
+    font-family: 'Inter';
+    background-color: #F1F3F5;
+    color: #000;
+    border: white;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 70px;
+    height: 2rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    font-family: "Inter";
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdow{
+    display: none;
+    gap: 5px;
+}
+
+.divImgPerfil-perfil:hover .dropdow{
+    display: inline-flex;
+}
+
+.imgPerfil {
+    width: 60%;
+}
+
+.viewDesktop {
+    display: none;
+}
+
+.main-tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    /* padding: 1rem; */
+    gap: 0.8rem;
+    text-align: justify;
+}
+
+.titulo-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.btn-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.btnFiltro-main-todos:hover {
+    cursor: pointer;
+}
+
+.btnFiltro-main-concluidos:hover {
+    cursor: pointer;
+}
+
+.btnFiltro-main-todos,
+.btnFiltro-main-concluidos {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #343A40;
+    cursor: pointer;
+}
+
+.btnCriar-main {
+    width: 8rem;
+    height: 2rem;
+    background: #415AF3;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer
+}
+
+.tarefas-section {
+    width: 100%;
+    height: 100%;
+}
+
+.tarefas-table {
+    width: 100%;
+}
+
+.header-tarefas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.dadosRenderizados {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem 2.5rem;
+    border-top: 1px solid #A1A1A1;
+}
+
+.viewMobile {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 32px;
+    color: #A1A1A1;
+}
+
+.viewDesktop {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 32px;
+    color: #A1A1A1;
+}
+
+#btnEditar-tarefa {
+    cursor: pointer;
+}
+
+.btnEditar {
+    color: #ADB5BD;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 0;
+}
+
+.viewDesktop {
+    display: none;
+}
+
+.viewDesktop-Renderizados {
+    display: none
+}
+
+#inputCheckPost {
+    border: 2px solid #ADB5BD;
+    border-radius: 4px;
+    width: 2rem;
+}
+
+#tituloPost {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    overflow: hidden;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#descricaoPost {
+    display: flex;
+    display: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+#categoriaPost {
+    display: none;
+    background: #D7E4FB;
+    color: #415AF3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    text-align: justify;
+}
+
+#editarPost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    color: #ADB5BD;
+    font-size: 2rem;
+    cursor: pointer
+}
+
+@media (min-width:700px) {
+    .topo-header {
+        padding: 0 12rem;
+        height: 5rem;
+    }
+    .cabecalho-perfil {
+        align-items: flex-start;
+        padding: 2rem 12rem;
+    }
+    .main-tarefas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 1rem;
+        gap: 0.8rem;
+        text-align: justify;
+    }
+    .titulo-main {
+        width: 45%;
+        padding: 0;
+        margin-left: 0;
+    }
+    .btn-main {
+        width: 45%;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    .viewDesktop,
+    .viewDesktop-Renderizados,
+    .viewMobile,
+    .viewMobile-Renderizados,
+    #inputCheckPost,
+    #categoriaPost {
+        display: flex;
+        width: 20%;
+        padding: 0.2rem;
+        margin: 0 0.3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.9rem;
+        overflow: hidden;
+    }
+    #statusHeader,
+    #titulo,
+    #tituloPost,
+    #inputCheckPost {
+        justify-content: flex-start;
+        text-align: start;
+        width: 30%;
+        overflow: hidden;
+    }
+    #inputCheckPost,
+    #statusHeader {
+        width: 3.5rem;
+        margin: 0.5rem;
+    }
+    #inputCheckPost {
+        margin-right: -1rem;
+    }
+    #editar,
+    #categoriaPost {
+        display: flex;
+        width: auto;
+        margin-right: 3rem;
+        justify-content: flex-end;
+    }
+    #categoria {
+        margin-right: 1rem;
+    }
+    .dadosRenderizados {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 1rem 2.5rem;
+        border: 1px solid #A1A1A1;
+        border-top: 0px solid #A1A1A1;
+    }
+    #descricaoPost {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 20%;
+        height: 1.2rem;
+        line-height: 1.5rem;
+        font-stretch: normal;
+        margin: 0.3rem;
+    }
+    .header-tarefas {
+        border: 1px solid #A1A1A1
+    }
+    /*  #descricaoPost,
+    #categoriaPost {
+        display: flex;
+    } */
+}

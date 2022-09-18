@@ -1,0 +1,110 @@
+.div-ModalEditarPerfil {
+    position: fixed;
+    top: -300%;
+    transition: 350ms;
+    background-color: #FFFFFF;
+    width: 90%;
+    margin: auto;
+    height: 70%;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 294px;
+    min-height: 300px;
+}
+
+.div-titulo-ModalEditarPerfil {
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.button-salvar-ModalEditarPerfil {
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #415AF3;
+    color: white;
+    font-size: 1rem;
+}
+
+.p-sair-ModalEditarPerfil:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+}
+.p-sair-ModalEditarPerfil{
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.input-nome-ModalEditarPerfil {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    height: 2rem;
+    width: 100%;
+    background-color: #F1F3F5;
+    border: none;
+    padding-left: 0.5rem;
+    color: #343A40;
+}
+
+.input-url-ModalEditarPerfil {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    height: 2rem;
+    width: 100%;
+    background-color: #F1F3F5;
+    border: none;
+    padding-left: 0.5rem;
+    color: #343A40;
+}
+
+.form-ModalEditarPerfil {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-nome-ModalEditarPerfil, .p-url-ModalEditarPerfil {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 650px) {
+    .div-ModalEditarPerfil {
+        background-color: #FFFFFF;
+        width: 90%;
+        margin: auto;
+        height: 70%;
+        border-radius: 8px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 570px;
+        max-height: 300px;
+    }
+
+    .div-titulo-ModalEditarPerfil {
+        font-weight: 600;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .form-ModalEditarPerfil {
+        width: 100%;
+    }
+
+    .button-salvar-ModalEditarPerfil {
+        width: 100%;
+    }
+}

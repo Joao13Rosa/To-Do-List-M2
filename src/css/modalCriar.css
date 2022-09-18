@@ -1,0 +1,128 @@
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div-ModalCriarHabito {
+        position: fixed;
+        top: -150%;
+        transition: 350ms;
+        background-color: #FFFFFF;
+        width: 90%;
+        margin: auto;
+        height: 40%;
+        border-radius: 8px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        min-width: 294px;
+        min-height: 500px;
+        margin-top: 5rem;
+        box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .div-titulo-ModalCriarHabito {
+        font-weight: 600;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }
+    
+    .input-titulo-ModalCriarHabito {
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        height: 2rem;
+        width: 100%;
+        background-color: #F1F3F5;
+        border: none;
+        padding-left: 0.5rem;
+        color: #343A40;
+    }
+    
+    .input-descricao-ModalCriarHabito {
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        height: 2rem;
+        width: 100%;
+        background-color: #F1F3F5;
+        border: none;
+        padding-left: 0.5rem;
+        color: #343A40;
+    }
+    
+    .select-categoria-ModalCriarHabito {
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        height: 2rem;
+        width: 100%;
+        background-color: #F1F3F5;
+        border: none;
+        padding-left: 0.5rem;
+        color: #343A40;
+    }
+    
+    .button-criar-ModalCriarHabito {
+        height: 3rem;
+        width: 15rem;
+        border: none;
+        border-radius: 0.3rem;
+        background-color: #415AF3;
+        color: white;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .p-titulo-ModalCriarHabito,
+    .p-descricao-ModalCriarHabito,
+    .p-categoria-ModalCriarHabito {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .button-criar-ModalCriarHabito:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #415AF3;
+        border: 2px solid #415AF3;
+    }
+    
+    .p-sair-ModalCriarHabito:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: red;
+    }
+    
+    @media screen and (min-width: 650px) {
+        .div-ModalCriarHabito {
+            background-color: #FFFFFF;
+            width: 50%;
+            margin: auto;
+            height: 40%;
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 570px;
+            max-height: 300px;
+            margin-top: 5rem;
+        }
+        .div-titulo-ModalCriarHabito {
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+        .form-ModalCriarHabito {
+            width: 100%;
+        }
+    }

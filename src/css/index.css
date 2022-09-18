@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+input:invalid {
+    border: red;
+}
+
+@media(min-width: 320px){
+    .area-login{
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+        align-items: center;
+        box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 300px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .div-login{
+        display: flex;
+        flex-direction: column;
+        background: #4150D2;
+        color: #fff;
+        gap: 1rem;
+        padding: 2.5rem;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .div-login h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .div-login h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .div-login p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .form-login{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 2.5rem;
+    }
+
+    .form-login h1{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .form-login label{
+        font-size: 0.7rem;
+    }
+
+    .form-login input{
+        background: #f8f9fa;
+        border-radius: 4px;
+        border: #f8f9fa;
+        padding: 0.5rem;
+    }
+
+    .form-login input:focus-within{
+        border: 2px solid #415AF3;
+    }
+
+    .form-login button{
+        background: #415AF3;
+        color: #fff;
+        border: 2px solid #415AF3;
+        border-radius: 4px;
+        padding: 3px 50px;
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 768px){
+    .area-login{
+        display: flex;
+        flex-direction: row;
+        margin: 250px auto;
+        align-items: center;
+        box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 738px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .div-login{
+        display: flex;
+        flex-direction: column;
+        background: #4150D2;
+        color: #fff;
+        gap: 1rem;
+        padding: 5rem;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .div-login h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .div-login h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .div-login p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .form-login{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 5rem;
+    }
+
+    .form-login h1{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .form-login label{
+        font-size: 0.7rem;
+    }
+
+    .form-login input{
+        background: #f8f9fa;
+        border-radius: 4px;
+        border: #f8f9fa;
+        padding: 0.5rem;
+    }
+
+    .form-login input:focus-within{
+        border: 2px solid #415AF3;
+    }
+
+    .form-login button{
+        background: #415AF3;
+        color: #fff;
+        border: 2px solid #415AF3;
+        border-radius: 4px;
+        padding: 3px 50px;
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 1440px){
+    .area-login{
+        display: flex;
+        flex-direction: row;
+        margin: 250px auto;
+        align-items: center;
+        box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 1080px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .div-login{
+        display: flex;
+        flex-direction: column;
+        background: #4150D2;
+        color: #fff;
+        gap: 3rem;
+        /* padding: 3rem; */
+        width: 540px;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .div-login h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .div-login h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .div-login p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .form-login{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 540px;
+    }
+
+    .form-login h1{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .form-login label{
+        font-size: 0.7rem;
+    }
+
+    .form-login input{
+        background: #f8f9fa;
+        border-radius: 4px;
+        border: #f8f9fa;
+        padding: 0.5rem;
+        outline: none;
+    }
+
+    .form-login input:focus-within{
+        border: 2px solid #415AF3;
+    }
+
+    .form-login button{
+        background: #415AF3;
+        color: #fff;
+        border: 2px solid #415AF3;
+        border-radius: 4px;
+        padding: 6.5px 50px;
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+}
